@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 200vh;
-}
 a{
     text-decoration: none;
 }
@@ -145,7 +142,7 @@ header{
 .navbar .menu-items {
     position: fixed;
   padding-top: 120px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.616);
   margin-top: -20px;
   height: 110vh;
   width: 20vw;
@@ -183,27 +180,113 @@ header{
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
+.search-div{
+  display: flex;
+}
+#search-button{
+  transition: all 0.5s ;
+}
+#search-input{
+  display: none;
+  font-family: "Inter";
+  font-size: 18px;
+  position: absolute;
+  text-align: center!important;
+  width: 0px;
+  transform: translate(-80px, -10px);
+  right: 0;
+  transition: all 2s;
+  background: none;
+  outline: none;
+  padding-left: 40px;
+  height: 50px;
+  border: 0;
+}
+@keyframes search_btn_in{
+  0%{
+    transform: translateX(0px);
+  }
+  40%,50%{
+    transform: translateX(-270px);
+  }
+  100%{
+    transform: translateX(-200px);
+  }
+}
+@keyframes search_btn_out{
+  from{
+    transform: translateX(-200px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+@keyframes search_in {
+  0%{
+    width: 0px;
+  }
+  20%,30%{
+    width: 300px;
+  }
+  100%{
+    width: 230px;
+  }
+}
+@keyframes search_out{
+  from{
+    width: 260px;
+  }
+  to{
+    width: 0px;
+  }
+}
 
-@media only screen and (max-width: 600px) {
-    .logo-div{
-        padding: 0;
-        margin-right: 0;
-        height: auto;
-    }
-    .logo-div img{
-        width: 250px;
-    }
-    .search-div, .cart-div{
-        display: none;
-    }
-    .navbar .menu-items {
+#input_mobile{
+  display: none;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid;
+  font-family: "Inter";
+  font-size: 20px;
+  max-width: 60%;
+  align-items: center;
+  margin-bottom: 50px;
+}
 
-      width: 80vw;
-    }
+@media only screen and (max-width: 850px) {
+  #input_mobile{
+    display:initial;
+    margin-left: 40px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  }
+  .logo-div{
+      padding: 0;
+      margin-right: 20px;
+      height: auto;
+  }
+  .logo-div img{
+      width: 250px;
+  }
+  .search-div, .cart-div{
+      display: none;
+  }
+  .navbar .menu-items {
+    padding-left: 0;
+    width: 80vw;
+  }
+  body{
+    height: 200vh;
+  }
 }
 @media only screen and (max-width: 350px) {
-
-    .logo-div img{
-        width: 200px;
-    }
+.logo-div{
+  padding: 0;
+  margin-right: 5px;
+  height: auto;
+}
+  .logo-div img{
+      width: 200px;
+  }
 }

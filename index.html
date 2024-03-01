@@ -19,6 +19,7 @@
                   <span class="line line3"></span>
                 </div>  
               <div class="menu-items">
+                <li><input type="text" name="" id="input_mobile" placeholder="Caută..."></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">blogs</a></li>
@@ -28,8 +29,12 @@
             </div>
         </div>
 
-        <div class="logo-div"><img src="1.png" alt=""></div>
-        <div class="search-div"><button><i class="fa-solid fa-magnifying-glass"></i></button></i></div>
+        <div class="logo-div"><a href="/"><img src="1.png" alt=""></a></div>
+        <div class="search-div">
+          <input   type="text" id="search-input">
+          <button class="btn" id="search-button" onclick="Show_Search()"><i class="fa-solid fa-magnifying-glass"></i></button></i>
+          
+        </div>
         <div class="cart-div"><button><i class="fa-solid fa-cart-shopping"></i></button></i></div>
     </header>
 
@@ -37,4 +42,27 @@
         <img src="2-Collection-banner-1920x600px.jpg" alt="bed" id="main-bed">
     </div>
 </body>
+
+<script>
+  var active = false;
+  function Show_Search()
+  {
+    active = !active;
+    if(active)
+    {
+      document.getElementById("search-button").style.animation = "search_btn_in 0.4s linear both";
+      document.getElementById("search-input").style.animation = "search_in 0.4s linear both";
+      document.getElementById("search-input").style.borderBottom = "0.5px solid";
+      document.getElementById("search-input").style.display = "block"
+    }
+      
+    else
+    {
+      document.getElementById("search-button").style.animation = "search_btn_out 0.2s linear both";
+      document.getElementById("search-input").style.animation = "search_out 0.3s linear both";
+      document.getElementById("search-input").style.display = "none"
+    }
+    
+  }
+  </script>
 </html>
