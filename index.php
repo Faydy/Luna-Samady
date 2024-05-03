@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/d8ef06f089.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    te pup iti urez o seara
     <header>
         <div class="navbar">
             <div class="container nav-container">
