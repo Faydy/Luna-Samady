@@ -13,9 +13,6 @@ input[type="submit"] {
      -webkit-appearance: none;
      border-radius: 0;
 }
-body{
-  height: 250vh;
-}
 a{
     text-decoration: none;
 }
@@ -104,7 +101,7 @@ header{
   padding-left: 100px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  width: 100vw;
+  width: 100%;
   font-size: 30px;
 }
 
@@ -134,11 +131,11 @@ header{
   color: rgb(102,102,102);
 }
 .bloc p a:hover{
-  color: black;
+  color: #111B21;
 }
 .nume{
   font-family: "Inter",sans-serif;
-  color: black;
+  color: #111B21;
   text-align: center;
   font-size: 18px;
   width: 100%;
@@ -183,18 +180,84 @@ header{
   font-family: "Inter";
   font-size: 15px;
   font-weight: bold;
-  background-color: black;
+  background-color: #111B21;
   color: white;
   border: none;
 }
 .item_btn:hover{
   background-color: white;
-  color: black;
-  border: 1px solid black;
+  color: #111B21;
+  border: 1px solid #111B21;
+}
+
+footer{
+  padding: 50px 20% 30px 20%;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  width: 100%;
+  background-color: #111B21;
+}
+
+.liste{
+  margin-top: 50px;
+  color: white;
+}
+.liste ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.liste span{
+  font-size: 12px;
+}
+.liste ul li ul{
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 50px;
+}
+.liste ul li ul a{
+  color: white;
+}
+.liste ul li ul a:hover{
+  text-decoration: underline;
+}
+
+.logo_white{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+.logo_white img{
+  width: 300px;
+}
+.irl{
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.wp_button{
+  position: absolute;
+  width: 80px;
+  bottom: 100px;
+  right: 20px;
+  border-radius: 50%;
+}
+
+.wp_button a{
+  position: fixed;
+  color: #25D366;
+}
+.wp_button img{
+  width: 80px;
 }
 
 .navbar {
-    position: absolute;
+    position:absolute;
     top: 10px;
     width: 100%;
 }
@@ -228,12 +291,12 @@ header{
 
 .nav-container {
   display: block;
-  position: fixed;
+  position:absolute;
   height: 60px;
 }
 
 .nav-container .checkbox {
-  position: absolute;
+  position:absolute;
   display: block;
   height: 32px;
   width: 32px;
@@ -299,6 +362,7 @@ header{
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
   font-weight: 500;
+
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -378,10 +442,16 @@ header{
   margin-bottom: 50px;
 }
 
+.WhatsApp{
+  padding: 20px;
+  margin-top: 10%;
+}
+.WhatsApp img{
+  width: 100%; margin-left: -10px;
+}
 @media only screen and (max-width: 850px) {
   #input_mobile{
     display:initial;
-    margin-left: 40px;
   padding-left: 0px;
   padding-bottom: 10px;
   }
@@ -399,6 +469,7 @@ header{
   .navbar .menu-items {
     padding-left: 0;
     width: 80vw;
+    margin-left: 0;
   }
   body{
     height: 200vh;
@@ -415,6 +486,40 @@ header{
   }
   .bloc{
     padding-bottom: 50px;
+  }
+  .WhatsApp{
+    padding: 40px;
+    display: flex;
+  }
+  footer{
+    padding: 0;
+  }
+  .liste ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .liste span{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .liste ul li ul li a{
+    color: #84969C;
+  }
+  .liste ul li ul{
+    margin-top: 0px;
+    line-height: 40px;
+  }
+  .liste ul li ul:last-child{
+    margin-bottom: 40px;
+  }
+  .irl{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo_white{
+    padding-top: 40px;
   }
 }
 @media only screen and (max-width: 350px) {

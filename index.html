@@ -20,11 +20,11 @@
                 </div>  
               <div class="menu-items">
                 <li><input type="text" name="" id="input_mobile" placeholder="Caută..."></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">blogs</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="./">Acasă</a></li>
+                <li><a href="#">Despre</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Modele</a></li>
+                <li class="WhatsApp"><a aria-label="Chat on WhatsApp"  style="align-self: flex-end; padding: 0;width: 100%;" href="https://wa.me/+40724625605"><img alt="Chat on WhatsApp" src="images/WhatsAppButtonGreenMedium.svg" /></a></li>
               </div>
             </div>
         </div>
@@ -133,6 +133,41 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <a href="./" class="logo_white"><img src="images/logo_white.svg" alt="logo"></a>
+
+      <div class="liste">
+        <ul>
+          <li><span>Magazin </span> <ul><li><a href="">Modele</a></li></ul></li>
+          <li><span>Luna Samady</span> <ul><li><a href="">Despre noi</a></li>  <li><a href="">Termeni și Condiții</a></li>  <li><a href="">Condiții de Returnare</li>
+            <li><a href="">Politica de confidențialitate</a></li>
+          </ul></li>
+          <li><span>Informatii</span><ul><li><a href="">Contactează-ne</a></li>  <li><a href="">Întrebări Frecvente</a></li>  <li><a href="">ANPC</li>
+            <li><a href="">Politica GDPR</a></li>
+          </ul></li>
+          <li><span>Contact</span><ul><li><i class="fa-solid fa-phone"></i><a href="tel:+40724625605" style="margin-left: 10px;">+40 724 625 605</a></li></ul></li>
+        </ul>
+      </div>
+
+
+
+      <div class="irl">
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/+40724625605"><img style="width: 300px;" alt="Chat on WhatsApp" src="images/WhatsAppButtonGreenMedium.svg" />
+        <a/>
+          <a style="margin: 0;line-height: 1;padding: 0;text-decoration: none;" href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow">
+            <img style="display:inline-block;border:0;width:300px;margin:5px;" src="https://etamade-com.github.io/anpc-sal-sol-logo/anpc-sal.svg" alt="Solutionarea Alternativa a Litigiilor">
+        </a>
+          <a style="margin: 0;line-height: 1;padding: 0;text-decoration: none;" href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow">
+              <img style="display:inline-block;border:0;width:300px;margin:5px;" src="https://etamade-com.github.io/anpc-sal-sol-logo/anpc-sol.svg" alt="Solutionarea Online a Litigiilor">
+          </a>
+      </div>
+      <div class="copyright" style="color: white;text-align: center;font-family:'Inter'; margin-top: 30px; font-size: 12px;">Luna Samady © 2024</div>
+    </footer>
+    <div class="wp_button">
+      <a  class="whats-app" href="https://wa.me/+40724625605" target="_blank"><img src="./images/whatsapp.svg" alt="">
+      
+  </a></div>
 </body>
 
 <script>
@@ -161,6 +196,7 @@
     {
       hidden = false;
       setTimeout(function() {
+        document.getElementsByClassName("navbar")[0].style = "position: absolute;"
         if(width > 850)
           document.getElementsByClassName("banner")[0].style.display = "unset";
       }, 500);
@@ -169,6 +205,7 @@
     else
     {
       hidden = true;
+      document.getElementsByClassName("navbar")[0].style = "position: fixed;"
       document.getElementsByClassName("banner")[0].style.display = "none";
       
     }
