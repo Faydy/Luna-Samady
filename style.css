@@ -242,9 +242,8 @@ footer{
 }
 .wp_button{
   position: absolute;
-  width: 80px;
   bottom: 100px;
-  right: 20px;
+  right: 100px;
   border-radius: 50%;
 }
 
@@ -253,7 +252,10 @@ footer{
   color: #25D366;
 }
 .wp_button img{
-  width: 80px;
+  position: relative;
+  max-width: 80px;
+  width: 100%;
+  height: auto;
 }
 
 .navbar {
