@@ -197,6 +197,13 @@ footer{
   width: 100%;
   background-color: #111B21;
 }
+.bg{
+  margin-top: 20px;
+  position:fixed;
+  width: 100%;
+  background-color: #111B21;
+  height: 200vh;
+}
 
 .liste{
   margin-top: 50px;
@@ -599,6 +606,7 @@ footer{
   }
   footer{
     padding: 0;
+    padding-bottom: 20px;
   }
   .liste ul{
     flex-direction: column;
